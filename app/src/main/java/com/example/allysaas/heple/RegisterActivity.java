@@ -32,12 +32,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        etUsername = (EditText) findViewById(R.id.editTextUsername);
-        etEmail = (EditText) findViewById(R.id.editTextEmail);
-        etPassword = (EditText) findViewById(R.id.editTextPassword);
-        etConfirmPassword = (EditText) findViewById(R.id.editTextConfirm);
-        txtLogin = (TextView) findViewById(R.id.textViewLogin);
-        btnRegister = (Button) findViewById(R.id.btnRegister);
+        etUsername = findViewById(R.id.editTextUsername);
+        etEmail = findViewById(R.id.editTextEmail);
+        etPassword = findViewById(R.id.editTextPassword);
+        etConfirmPassword = findViewById(R.id.editTextConfirm);
+        txtLogin = findViewById(R.id.textLogin);
+        btnRegister = findViewById(R.id.btnRegister);
         mAuth = FirebaseAuth.getInstance();
         btnRegister.setOnClickListener(this);
         txtLogin.setOnClickListener(this);
@@ -77,11 +77,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == btnRegister.getId()) {
-            if(validasiRegister()) {
-                registerAccount(etEmail.getText().toString(),etPassword.getText().toString() );
+        if (v.getId() == btnRegister.getId()) {
+            if (validasiRegister()) {
+                registerAccount(etEmail.getText().toString(), etPassword.getText().toString());
             }
-        } else if(v.getId() == txtLogin.getId()){
+        } else if (v.getId() == txtLogin.getId()) {
             Intent myIntent = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(myIntent);
         }

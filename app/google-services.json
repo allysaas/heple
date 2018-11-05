@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:756588525402:android:92ca382984e16362",
         "android_client_info": {
-          "package_name": "com.example.allysaas.heple"
+          "package_name": "com.allysaas.heple"
         }
       },
       "oauth_client": [
@@ -51,6 +51,14 @@
           "android_info": {
             "package_name": "com.example.allysaas.heple",
             "certificate_hash": "0e0f3aa6119701f8983cee58fe9cc41551883c92"
+          }
+        },
+        {
+          "client_id": "756588525402-2non4o9708imtp69v7rtqhsfqvurjkme.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.allysaas.heple",
+            "certificate_hash": "2486311ba8fe03861a23d6137be5516ebdb3e241"
           }
         },
         {
